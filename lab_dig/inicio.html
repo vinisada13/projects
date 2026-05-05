@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="escutaAi.ico">
+</head>
+<body onload="iniciar()"  class="inicioclass">
+    <div class="container">
+    <div class="inicio-container">
+        <h1 id="inicio">
+            Aperte o botão de iniciar do aparelho
+        </h1>
+    </div>
+    </div>
+        </div>
+    <div class="pl-container">
+    <button class="paleta" onclick="setTheme('theme-night')" id="pl4"></button>
+    <button class="paleta" onclick="setTheme('theme-default')" id="pl1"></button>
+    <button class="paleta" onclick="setTheme('theme-ocean')" id="pl2"></button>
+    <button class="paleta" onclick="setTheme('theme-sunset')" id="pl3"></button>
+    </div>
+<script src="script.js"></script>
+<!--<style src = "style.css"></style>-->
+<script>
+    function setTheme(themeName) {
+    document.body.className = themeName;
+
+    // save theme (important for kids → consistency)
+    localStorage.setItem("theme", themeName);
+}
+</script>
+<style>
+    .inicioclass{
+        background-color: rgb(100,120,180);
+    }
+</style>
+</body>
+</html>

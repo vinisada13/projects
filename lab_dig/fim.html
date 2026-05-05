@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="escutaAi.ico">
+</head>
+<body class="inicioclass" onload="recomeçar()">
+    <div class="container">
+    <div class="inicio-container">
+        <h1 id="fim">
+            Parabéns, você completou o jogo
+        </h1>
+    </div>
+    <div class="fim-container">
+        <h1 id="pontos">
+            acertos: 8
+        </h1>
+        <h1 id="tentativas">
+            tentativas: 9
+        </h1>
+    </div>
+    <img src="stars2.svg" width="500" height="300" class="center">
+        </div>
+    <div class="pl-container">
+    <button class="paleta" onclick="setTheme('theme-night')" id="pl4"></button>
+    <button class="paleta" onclick="setTheme('theme-default')" id="pl1"></button>
+    <button class="paleta" onclick="setTheme('theme-ocean')" id="pl2"></button>
+    <button class="paleta" onclick="setTheme('theme-sunset')" id="pl3"></button>
+    </div>
+<script src="script.js"></script>
+<script>
+    function setTheme(themeName) {
+    document.body.className = themeName;
+
+    // save theme (important for kids → consistency)
+    localStorage.setItem("theme", themeName);
+}
+</script>
+<style>
+    .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+</style>
+<!--<style src = "style.css"></style>-->
+</body>
+</html>

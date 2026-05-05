@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "pergunta": "Qual a primeira letra do alfabeto?",
+            "alternativas": ["A", "B", "C", "D"],
+            "resposta": "A"
+        },
+        {
+            "id": 1,
+            "pergunta": "Qual é o maior planeta do Sistema Solar?",
+            "alternativas": ["Terra", "Júpiter", "Saturno", "Marte"],
+            "resposta": "Júpiter"
+        },
+        {
+            "id": 2,
+            "pergunta": "Quantos segundos existem em um minuto?",
+            "alternativas": ["60", "100", "30", "120"],
+            "resposta": "60"
+        },
+        {
+            "id": 3,
+            "pergunta": "Qual é a cor do céu em um dia claro?",
+            "alternativas": ["Azul", "Verde", "Vermelho", "Amarelo"],
+            "resposta": "Azul"
+        },
+        {
+            "id": 4,
+            "pergunta": "Quem pintou a Mona Lisa?",
+            "alternativas": ["Van Gogh", "Leonardo da Vinci", "Picasso", "Michelangelo"],
+            "resposta": "Leonardo da Vinci"
+        },
+        {
+            "id": 5,
+            "pergunta": "Qual é o idioma oficial do Brasil?",
+            "alternativas": ["Espanhol", "Português", "Inglês", "Francês"],
+            "resposta": "Português"
+        },
+        {
+            "id": 6,
+            "pergunta": "Qual animal é conhecido como rei da selva?",
+            "alternativas": ["Leão", "Tigre", "Elefante", "Guepardo"],
+            "resposta": "Leão"
+        },
+        {
+            "id": 7,
+            "pergunta": "Quantos estados tem o Brasil?",
+            "alternativas": ["26", "27", "25", "24"],
+            "resposta": "26"
+        },
+        {
+            "id": 8,
+            "pergunta": "Qual é o símbolo químico do ouro?",
+            "alternativas": ["Au", "Ag", "Fe", "O"],
+            "resposta": "Au"
+        }
+    ]
+}

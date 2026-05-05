@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pergunta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="escutaAi.ico">
+</head>
+
+<body  onload="startQuiz()" class="body">
+
+<div class="container">
+    <div class="question-container">
+        <h1 id="question">
+            Qual é a capital do Brasil?
+        </h1>
+    </div>
+
+    <div class="answers-container">
+
+        <button class="answer-btn" id="answer1" name="answer-btn">
+        </button>
+
+        <button class="answer-btn" id="answer2" name="answer-btn">
+        </button>
+
+        <button class="answer-btn" id="answer3" name="answer-btn">
+        </button>
+
+        <button class="answer-btn" id="answer4" name="answer-btn">
+        </button>
+
+        
+    </div>
+    <div class="popup" onclick="myFunction()">
+        <span class="popuptext" id="myPopup">Tente novamente</span>
+    </div>
+    <div class="points">
+        <text class="points-text" id="mode">Modo:</text>
+        <text class="points-text" id="Pontuação">Pontuação:</text>
+        <text class="points-text" id="tentativas">Tentativas:</text>
+    </div>
+    <div class="pl-container">
+    <button class="paleta" onclick="setTheme('theme-night')" id="pl4"></button>
+    <button class="paleta" onclick="setTheme('theme-default')" id="pl1"></button>
+    <button class="paleta" onclick="setTheme('theme-ocean')" id="pl2"></button>
+    <button class="paleta" onclick="setTheme('theme-sunset')" id="pl3"></button>
+    </div>
+
+
+</div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+    /*amarelo=()=>{
+        const buttons = document.querySelectorAll(".answer-btn");
+
+        buttons.forEach(btn => {
+            btn.style.backgroundColor = "rgb(200, 200, 0)";
+            btn.style.color = "black";
+        });
+    }
+    vermelho=()=>{
+        const buttons = document.querySelectorAll(".answer-btn");
+
+        buttons.forEach(btn => {
+            btn.style.backgroundColor = "rgb(200,89,89)";
+            btn.style.color = "black";
+        });
+        console.log('aa')
+    }
+    azul=()=>{
+        const buttons = document.querySelectorAll(".answer-btn");
+
+        buttons.forEach(btn => {
+            btn.style.backgroundColor = "rgb(0,0,255)";
+            btn.style.color = "whitesmoke";
+        });
+        console.log('aa')
+    }
+    preto=()=>{
+        const buttons = document.querySelectorAll(".answer-btn");
+
+        buttons.forEach(btn => {
+            btn.style.backgroundColor = "rgb(255,255,255)";
+            btn.style.color = "black";
+        });
+    }*/
+   function setTheme(themeName) {
+    document.body.className = themeName;
+
+    // save theme (important for kids → consistency)
+    localStorage.setItem("theme", themeName);
+}
+</script>
+</body>
+</html>
